@@ -1,0 +1,1 @@
+console.debug("Listicle app loaded.");

@@ -1,0 +1,17 @@
+<section class="grid">
+  <% events.forEach((g) => { %>
+    <article>
+      <figure class="thumb">
+        <img src="<%= g.image %>" alt="<%= g.name %> photo">
+      </figure>
+      <h3><a href="/events/<%= g.slug %>"><%= g.name %></a></h3>
+      <ul class="meta">
+        <li><strong>Neighborhood:</strong> <%= g.neighborhood %>, <%= g.borough %></li>
+        <li><strong>Focus:</strong> <%= g.focus %></li>
+        <li><strong>Admission:</strong> <%= g.admission %></li>
+      </ul>
+      <p><%= g.description %></p>
+      <p><a href="/events/<%= g.slug %>" role="button">View details</a></p>
+    </article>
+  <% }) %>
+</section>

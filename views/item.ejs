@@ -1,0 +1,27 @@
+<article>
+  <a href="/" class="back-link">← Back to all galleries</a>
+  <hgroup>
+    <h2><%= item.name %></h2>
+    <p class="muted"><%= item.neighborhood %>, <%= item.borough %></p>
+  </hgroup>
+
+  <img src="<%= item.image %>" alt="<%= item.name %> photo" class="detail-img">
+
+  <div class="grid">
+    <div>
+      <h4>About</h4>
+      <p><%= item.description %></p>
+    </div>
+    <div>
+      <h4>Visitor Info</h4>
+      <ul class="meta">
+        <li><strong>Focus:</strong> <%= item.focus %></li>
+        <li><strong>Hours:</strong> <%= item.hours %></li>
+        <li><strong>Admission:</strong> <%= item.admission %></li>
+        <li><strong>Address:</strong> <%= item.address %></li>
+        <li><strong>Website:</strong> <a href="<%= item.website %>" target="_blank" rel="noreferrer"><%= item.website %></a></li>
+        <li><strong>Slug:</strong> <code><%= item.slug %></code></li>
+      </ul>
+    </div>
+  </div>
+</article>
